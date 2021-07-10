@@ -1,0 +1,38 @@
+.carousel-item{
+    height: 300px;
+}
+
+.crousel-img{
+    
+    margin: 0px 0px -300px 0px;
+    object-position: 0px -100px;
+}
+
+#Icon{
+    margin: 0px 0px 0px 0px;
+    object-position: 5px -5px;
+    height: 40px;
+    width: 40px;
+}
+
+#Warning{
+    display: none;
+}
+.developer {
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    padding-left: 10px;
+    background-color: gray;
+    color: black;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-size: 12px;
+
+        
+
+}
