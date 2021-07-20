@@ -1,6 +1,8 @@
 console.log("This is js file");
 //9ad3ff30ecd54a2f8793d57d5ca63534
 
+let badge=document.getElementById("badge");
+
 let country = "in"; //India
 let apiKey = "4173a6ca06935619d18ca3c5b2a066b5";//"9ad3ff30ecd54a2f8793d57d5ca63534";
 //Grab the news container
@@ -50,6 +52,7 @@ xhr.onload = function showNews() {
         // ci2.src=articles[1].image;
         // ci3.src=articles[2].image;
         newsAccordion.innerHTML = newsHTML;
+        badge.innerHTML="!News";
     }
     else {
         console.log("Some error");
@@ -67,6 +70,9 @@ let countries = Array.from(countries1);
 countries.forEach(function (elem, idx) {
     elem.addEventListener('click', function () {
         console.log(idx);
+        badge.innerHTML=`!News <div class="spinner-border" role="status" style="display: inherit;">
+        <span class="visually-hidden">Loading...</span>
+    </div>`;
         let navBarDD=document.getElementById("navbarDropdown");
         if (idx == 0) {
             country = "au";
@@ -173,6 +179,7 @@ countries.forEach(function (elem, idx) {
                     newsHTML += news;
                 });
                 newsAccordion.innerHTML = newsHTML;
+                badge.innerHTML="!News";
 
                 
 
